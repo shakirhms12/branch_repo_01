@@ -66,6 +66,4 @@ resource "aws_instance" "my_ec2" {
     Environment = terraform.workspace
     Branch      = terraform.workspace
   }
-
-  private_dns = "${terraform.workspace}-webserver.private"
 }
